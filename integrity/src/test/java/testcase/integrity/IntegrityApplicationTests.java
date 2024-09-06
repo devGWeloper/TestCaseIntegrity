@@ -1,10 +1,10 @@
-package testcase.skhynix;
+package testcase.integrity;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SkhynixApplicationTests {
+class IntegrityApplicationTests {
 
 	@Test
 	void contextLoads() {
