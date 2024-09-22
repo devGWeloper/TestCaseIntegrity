@@ -1,6 +1,6 @@
-package service;
+package testcase.integrity.service;
 
-import dto.DataDTO;
+import testcase.integrity.dto.DataDTO;
 
 import java.util.List;
 

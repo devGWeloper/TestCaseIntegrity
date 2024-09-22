@@ -1,4 +1,4 @@
-package dto;
+package testcase.integrity.dto;
 
 import lombok.Data;
 

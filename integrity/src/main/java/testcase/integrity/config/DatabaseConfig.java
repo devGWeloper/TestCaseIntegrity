@@ -1,4 +1,4 @@
-package config;
+package testcase.integrity.config;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -15,7 +15,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import javax.sql.DataSource;
 
 @Configuration
-@MapperScan(basePackages = "mapper")
+@MapperScan(basePackages = "testcase.integrity.mapper")
 public class DatabaseConfig {
 
     @Primary

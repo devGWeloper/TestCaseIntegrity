@@ -1,6 +1,6 @@
-package mapper;
+package testcase.integrity.mapper;
 
-import dto.DataDTO;
+import testcase.integrity.dto.DataDTO;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

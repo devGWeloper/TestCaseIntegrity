@@ -1,8 +1,8 @@
-package service;
+package testcase.integrity.service;
 
-import dto.DataDTO;
-import mapper.OracleMapper;
-import mapper.PostgresMapper;
+import testcase.integrity.dto.DataDTO;
+import testcase.integrity.mapper.OracleMapper;
+import testcase.integrity.mapper.PostgresMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
