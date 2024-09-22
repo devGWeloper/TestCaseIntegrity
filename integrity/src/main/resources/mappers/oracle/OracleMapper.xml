@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.OracleMapper">
+    <select id="search" parameterType="dto.DataDTO" resultType="dto.DataDTO">
+        SELECT * FROM EVENT_MAS
+        WHERE EVENT_NAME LIKE '%'||#{event}||'%'
+          AND USER_ID LIKE '%'||#{user}||'%'
+          AND MANUAL = # {manual}
+          AND EVENT_CONTENT LIKE '%'||#{testContent}||'%'
+    </select>
+
+    <insert id="save" parameterType="dto.DataDTO">
+        INSERT INTO EVENT_MAS (EVENT_NAME, USER_ID, MANUAL, EVENT_CONTENT)
+        VALUES (#{event}, #{user}, #{manual}, #{testContent})
+    </insert>
+
+    <select id="findById" parameterType="long" resultType="dto.DataDTO">
+        SELECT * FROM data WHERE id = #{id}
+    </select>
+</mapper>
